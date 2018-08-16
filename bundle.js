@@ -2742,7 +2742,6 @@
     }, {
         id: 10,
         name: "Bush Gear",
-        cUrl: "http://i.imgur.com/pF98OIu.png"
         price: 3e3,
         scale: 160,
         desc: "allows you to disguise yourself as a bush, although hackers can see you"
@@ -5346,7 +5345,7 @@
                 o.hookTouchEvents(i, !0), o.generateElement({
                     tag: "img",
                     class: "hatPreview",
-                    src: t[n].cUrl?t[n].cUrl:"../img/" + (e ? "accessories/access_" : "hats/hat_") + t[n].id + (t[n].topSprite ? "_p" : "") + ".png",
+                    src: "../img/" + (e ? "accessories/access_" : "hats/hat_") + t[n].id + (t[n].topSprite ? "_p" : "") + ".png",
                     parent: i
                 }), o.generateElement({
                     tag: "span",
