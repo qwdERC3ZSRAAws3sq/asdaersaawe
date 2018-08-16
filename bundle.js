@@ -5452,7 +5452,7 @@
     function an() {
         nn.value = "", rn.style.display = "none"
     }
-    var ln, hn, cn = ["cunt", "whore", "fuck", "shit", "faggot", "nigger", "nigga", "dick", "vagina", "minge", "cock", "rape", "cum", "sex", "tits", "penis", "clit", "pussy", "meatcurtain", "jizz", "prune", "douche", "wanker", "damn", "bitch", "dick", "fag", "bastard"];
+    var ln, hn, cn = [];
 
     function un(e, t) {
         var n = Ei(e);
@@ -5744,7 +5744,7 @@
                     Zn[e] = r
                 }
                 Jn.isLoaded && (t.save(), t.translate(-20 - (r.xOff || 0), 0), r.spin && t.rotate(n.skinRot), t.drawImage(Jn, -r.scale / 2, -r.scale / 2, r.scale, r.scale), t.restore())
-            }(e.tailIndex, t, e), e.buildIndex < 0 && !h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), t.fillStyle = a.skinColors[e.skinColor], si(e.scale * Math.cos(n), e.scale * Math.sin(n), 14), si(e.scale * r * Math.cos(-n * i), e.scale * r * Math.sin(-n * i), 14), e.buildIndex < 0 && h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), e.buildIndex >= 0) {
+            }(e.tailIndex, t, e), e.buildIndex < 0 && !h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), t.fillStyle = "#551A8B", si(e.scale * Math.cos(n), e.scale * Math.sin(n), 14), si(e.scale * r * Math.cos(-n * i), e.scale * r * Math.sin(-n * i), 14), e.buildIndex < 0 && h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), e.buildIndex >= 0) {
             var o = oi(h.list[e.buildIndex]);
             t.drawImage(o, e.scale - h.list[e.buildIndex].holdOffset, -o.width / 2)
         }
