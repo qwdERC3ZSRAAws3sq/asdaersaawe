@@ -6046,10 +6046,11 @@
                               //we.fillStyle = "#8ecc51";
                               //we.strokeStyle = D.team == O.team?"#228b22":"#ff0000";
                               we.strokeStyle = "#ff0000";
+                              ctx.lineWidth = 3;
                               console.log(we.strokeStyle + " " + O.x+","+O.y+" "+D.x+","+D.y);
                               we.beginPath();
-                              we.moveTo(0, 0);
-                              we.moveTo(D.x-f, D.y-d);
+                              we.moveTo(O.x-f, O.y-d);
+                              we.lineTo(D.x-f, D.y-d);
                               we.stroke();
                             }
                         }
