@@ -6063,7 +6063,7 @@
                             if(D!=O){
                               //we.fillStyle = "#8ecc51";
                               we.fillStyle = D.team == O.team?"#228b22":"#ff0000";
-                              we.roundRect(D.x, D.y, O.x, O.y);
+                              we.roundRect(D.x, D.y, O.x, O.y, 17);
 
                             }
                         }
