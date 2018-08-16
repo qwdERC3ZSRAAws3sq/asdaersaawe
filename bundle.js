@@ -6048,8 +6048,8 @@
                               we.strokeStyle = "#ff0000";
                               console.log(we.strokeStyle + " " + O.x+","+O.y+" "+D.x+","+D.y);
                               we.beginPath();
-                              we.moveTo(O.x, O.y);
-                              we.moveTo(D.x, D.y);
+                              we.moveTo(O.x-f, O.y-d);
+                              we.moveTo(D.x-f, D.y-d);
                               we.stroke();
                             }
                         }
