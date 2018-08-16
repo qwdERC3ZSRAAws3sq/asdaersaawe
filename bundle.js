@@ -5744,7 +5744,7 @@
                     Zn[e] = r
                 }
                 Jn.isLoaded && (t.save(), t.translate(-20 - (r.xOff || 0), 0), r.spin && t.rotate(n.skinRot), t.drawImage(Jn, -r.scale / 2, -r.scale / 2, r.scale, r.scale), t.restore())
-            }(e.tailIndex, t, e), e.buildIndex < 0 && !h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), t.fillStyle = "#551A8B", si(e.scale * Math.cos(n), e.scale * Math.sin(n), 14), si(e.scale * r * Math.cos(-n * i), e.scale * r * Math.sin(-n * i), 14), e.buildIndex < 0 && h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), e.buildIndex >= 0) {
+            }(e.tailIndex, t, e), e.buildIndex < 0 && !h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), t.fillStyle = a.skinColors[e.skinColor], si(e.scale * Math.cos(n), e.scale * Math.sin(n), 14), si(e.scale * r * Math.cos(-n * i), e.scale * r * Math.sin(-n * i), 14), e.buildIndex < 0 && h.weapons[e.weaponIndex].aboveHand && (ti(h.weapons[e.weaponIndex], a.weaponVariants[e.weaponVariant].src, e.scale, 0, t), void 0 == h.weapons[e.weaponIndex].projectile || h.weapons[e.weaponIndex].hideProjectile || qn(e.scale, 0, h.projectiles[h.weapons[e.weaponIndex].projectile], we)), e.buildIndex >= 0) {
             var o = oi(h.list[e.buildIndex]);
             t.drawImage(o, e.scale - h.list[e.buildIndex].holdOffset, -o.width / 2)
         }
@@ -6050,7 +6050,7 @@
                     }
                     for (we.globalAlpha = 1, we.fillStyle = "rgba(0, 0, 70, 0.35)", we.fillRect(0, 0, oe, se), we.strokeStyle = nt, s = 0; s < W.length + q.length; ++s)
                         if ((D = W[s] || q[s - W.length]).visible && (10 != D.skinIndex || D == O || D.team && D.team == O.team || 10 == D.skinIndex)) {
-                          console.log(D);
+                          console.log(O);
                             var x = (D.team ? "[" + D.team + "] " : "") + (D.name || "");
                             if ("" != x) {
                                 if (we.font = (D.nameScale || 30) + "px Hammersmith One", we.fillStyle = "#fff", we.textBaseline = "middle", we.textAlign = "center", we.lineWidth = D.nameScale ? 11 : 8, we.lineJoin = "round", we.strokeText(x, D.x - f, D.y - d - D.scale - a.nameY), we.fillText(x, D.x - f, D.y - d - D.scale - a.nameY), D.isLeader && Dn.crown.isLoaded) {
