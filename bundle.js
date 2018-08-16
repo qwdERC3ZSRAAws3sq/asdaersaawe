@@ -3832,6 +3832,7 @@
         req: ["wood", 30, "stone", 30],
         trap: !0,
         ignoreCollision: !0,
+        hideFromEnemy: !0,
         health: 500,
         colDiv: .2,
         scale: 50,
@@ -3942,7 +3943,7 @@
         }, this.getScale = function(e, t) {
             return e = e || 1, this.scale * (this.isItem || 2 == this.type || 3 == this.type || 4 == this.type ? 1 : .6 * e) * (t ? 1 : this.colDiv)
         }, this.visibleToPlayer = function(e) {
-            return !this.hideFromEnemy || this.owner && (this.owner == e || this.owner.team && e.team == this.owner.team)
+            return !0
         }, this.update = function(e) {
             this.active && (this.xWiggle && (this.xWiggle *= Math.pow(.99, e)), this.yWiggle && (this.yWiggle *= Math.pow(.99, e)), this.turnSpeed && (this.dir += this.turnSpeed * e))
         }
