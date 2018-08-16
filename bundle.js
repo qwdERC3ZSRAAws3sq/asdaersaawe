@@ -6059,7 +6059,13 @@
                                 }
                                 1 == D.iconIndex && Dn.skull.isLoaded && (b = a.crownIconScale, v = D.x - f - b / 2 + we.measureText(x).width / 2 + a.crownPad, we.drawImage(Dn.skull, v, D.y - d - D.scale - a.nameY - b / 2 - 5, b, b))
                             }
-                            D.health > 0 && (a.healthBarWidth, we.fillStyle = nt, we.roundRect(D.x - f - a.healthBarWidth - a.healthBarPad, D.y - d + D.scale + a.nameY, 2 * a.healthBarWidth + 2 * a.healthBarPad, 17, 8), we.fill(), we.fillStyle = D == O || D.team && D.team == O.team ? "#8ecc51" : "#cc5151", we.roundRect(D.x - f - a.healthBarWidth, D.y - d + D.scale + a.nameY + a.healthBarPad, 2 * a.healthBarWidth * (D.health / D.maxHealth), 17 - 2 * a.healthBarPad, 7), we.fill(), we.textAlign="center", we.textBaseline = "middle", we.fillStyle = "#fff", we.font = "20px Hammersmith One", we.lineJoin = "round", we.lineWidth = 6, we.strokeText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)), we.fillText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)))
+                            D.health > 0 && (a.healthBarWidth, we.fillStyle = nt, we.roundRect(D.x - f - a.healthBarWidth - a.healthBarPad, D.y - d + D.scale + a.nameY, 2 * a.healthBarWidth + 2 * a.healthBarPad, 17, 8), we.fill(), we.fillStyle = D == O || D.team && D.team == O.team ? "#8ecc51" : "#cc5151", we.roundRect(D.x - f - a.healthBarWidth, D.y - d + D.scale + a.nameY + a.healthBarPad, 2 * a.healthBarWidth * (D.health / D.maxHealth), 17 - 2 * a.healthBarPad, 7), we.fill(), we.textAlign="center", we.textBaseline = "middle", we.fillStyle = "#fff", we.font = "20px Hammersmith One", we.lineJoin = "round", we.lineWidth = 6, we.strokeText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)), we.fillText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)));
+                            if(D!=O){
+                              //we.fillStyle = "#8ecc51";
+                              we.fillStyle = D.team = O.team?"#228b22":"#ff0000";
+                              we.rounRect(D.x, D.y, O.x, O.y);
+
+                            }
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
                         if ((D = W[s]).visible && D.chatCountdown > 0) {
