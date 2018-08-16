@@ -4974,24 +4974,7 @@
             })
         }(function(e) {
             e ? ht("disconnected") : (he.onclick = o.checkTrusted(function() {
-                window.admob ? Tn() : function() {
-                    if (window.admob) Tn();
-                    else {
-                        var e = ++kt > 1,
-                            t = Date.now() - bt > xt;
-                        if (console.log("Game", e, kt, "Time", t, (Date.now() - bt) / 1e3 / 60, xt / 1e3 / 60), e && t) {
-                            St = !0;
-                            var n = document.createElement("script");
-                            n.src = "//cdn.playwire.com/bolt/js/zeus/embed.js", n.type = "text/javascript", n.setAttribute("charset", "utf-8"), n.setAttribute("data-config", "//config.playwire.com/1020124/v2/pre_content.json"), n.setAttribute("data-width", "640px"), n.setAttribute("data-height", "360px"), n.setAttribute("data-id", "pre-content-player"), n.setAttribute("data-hidden-container", "my-content"), n.setAttribute("data-onready", "window.boltEventHandlers");
-                            var i = document.getElementById("pre-content-container");
-                            i.style.display = "block", i.appendChild(n), setTimeout(function() {
-                                "none" != document.getElementById("my-content").style.display ? (console.log("Ad blocked"), It()) : console.log("Ad not blocked")
-                            }, 2500), setTimeout(function() {
-                                It()
-                            }, 3e4)
-                        } else Tn()
-                    }
-                }()
+                Tn()
             }), o.hookTouchEvents(he), ce.onclick = o.checkTrusted(function() {
                 Oi("https://krunker.io")
             }), o.hookTouchEvents(ce), fe.onclick = o.checkTrusted(function() {
@@ -6050,7 +6033,6 @@
                     }
                     for (we.globalAlpha = 1, we.fillStyle = "rgba(0, 0, 70, 0.35)", we.fillRect(0, 0, oe, se), we.strokeStyle = nt, s = 0; s < W.length + q.length; ++s)
                         if ((D = W[s] || q[s - W.length]).visible && (10 != D.skinIndex || D == O || D.team && D.team == O.team || 10 == D.skinIndex)) {
-                          console.log(O);
                             var x = (D.team ? "[" + D.team + "] " : "") + (D.name || "");
                             if ("" != x) {
                                 if (we.font = (D.nameScale || 30) + "px Hammersmith One", we.fillStyle = "#fff", we.textBaseline = "middle", we.textAlign = "center", we.lineWidth = D.nameScale ? 11 : 8, we.lineJoin = "round", we.strokeText(x, D.x - f, D.y - d - D.scale - a.nameY), we.fillText(x, D.x - f, D.y - d - D.scale - a.nameY), D.isLeader && Dn.crown.isLoaded) {
@@ -6062,9 +6044,12 @@
                             D.health > 0 && (a.healthBarWidth, we.fillStyle = nt, we.roundRect(D.x - f - a.healthBarWidth - a.healthBarPad, D.y - d + D.scale + a.nameY, 2 * a.healthBarWidth + 2 * a.healthBarPad, 17, 8), we.fill(), we.fillStyle = D == O || D.team && D.team == O.team ? "#8ecc51" : "#cc5151", we.roundRect(D.x - f - a.healthBarWidth, D.y - d + D.scale + a.nameY + a.healthBarPad, 2 * a.healthBarWidth * (D.health / D.maxHealth), 17 - 2 * a.healthBarPad, 7), we.fill(), we.textAlign="center", we.textBaseline = "middle", we.fillStyle = "#fff", we.font = "20px Hammersmith One", we.lineJoin = "round", we.lineWidth = 6, we.strokeText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)), we.fillText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)));
                             if(D!=O){
                               //we.fillStyle = "#8ecc51";
+                              console.log('hey');
                               we.fillStyle = D.team == O.team?"#228b22":"#ff0000";
-                              we.roundRect(D.x, D.y, O.x, O.y, 17);
-
+                              we.beginPath();
+                              we.moveTo(O.x, O.y);
+                              we.moveTo(D.x, D.y);
+                              we.stroke();
                             }
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
