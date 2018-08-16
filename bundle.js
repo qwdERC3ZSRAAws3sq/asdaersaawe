@@ -6046,14 +6046,14 @@
                             if(D!=O){
                               if(!window.tAnimals&&!D.isPlayer){
                               }else{
-                                we.strokeStyle = D.isPlayer?D.team != ""?"#ff0000":D.team == O.team?"#228b22":"#ff0000":"#0000ff";
+                                we.strokeStyle = D.isPlayer?D.team == O.team&&?D.team != ""?"#228b22":"#ff0000":"#0000ff";
                                 we.lineWidth = 3;
                                 we.beginPath();
                                 we.moveTo(O.x-f, O.y-d);
                                 we.lineTo(D.x-f, D.y-d);
                                 we.stroke();
                                 we.strokeStyle = nt;
-                            }
+                              }
                             }
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
