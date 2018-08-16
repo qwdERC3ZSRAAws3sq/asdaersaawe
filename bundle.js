@@ -6049,8 +6049,8 @@
                         a.mapScale - f <= oe && (w = oe - (a.mapScale - f)), we.fillRect(v, a.mapScale - d, oe - v - w, se - (a.mapScale - d))
                     }
                     for (we.globalAlpha = 1, we.fillStyle = "rgba(0, 0, 70, 0.35)", we.fillRect(0, 0, oe, se), we.strokeStyle = nt, s = 0; s < W.length + q.length; ++s)
-                      console.log(D);
                         if ((D = W[s] || q[s - W.length]).visible && (10 != D.skinIndex || D == O || D.team && D.team == O.team || 10 == D.skinIndex)) {
+                          console.log(D);
                             var x = (D.team ? "[" + D.team + "] " : "") + (D.name || "");
                             if ("" != x) {
                                 if (we.font = (D.nameScale || 30) + "px Hammersmith One", we.fillStyle = "#fff", we.textBaseline = "middle", we.textAlign = "center", we.lineWidth = D.nameScale ? 11 : 8, we.lineJoin = "round", we.strokeText(x, D.x - f, D.y - d - D.scale - a.nameY), we.fillText(x, D.x - f, D.y - d - D.scale - a.nameY), D.isLeader && Dn.crown.isLoaded) {
