@@ -6044,8 +6044,9 @@
                             D.health > 0 && (a.healthBarWidth, we.fillStyle = nt, we.roundRect(D.x - f - a.healthBarWidth - a.healthBarPad, D.y - d + D.scale + a.nameY, 2 * a.healthBarWidth + 2 * a.healthBarPad, 17, 8), we.fill(), we.fillStyle = D == O || D.team && D.team == O.team ? "#8ecc51" : "#cc5151", we.roundRect(D.x - f - a.healthBarWidth, D.y - d + D.scale + a.nameY + a.healthBarPad, 2 * a.healthBarWidth * (D.health / D.maxHealth), 17 - 2 * a.healthBarPad, 7), we.fill(), we.textAlign="center", we.textBaseline = "middle", we.fillStyle = "#fff", we.font = "20px Hammersmith One", we.lineJoin = "round", we.lineWidth = 6, we.strokeText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)), we.fillText(`\nHP:${D.health}/${D.maxHealth}`,D.x - f,D.y - d + D.scale + a.nameY+(34)));
                             if(D!=O){
                               //we.fillStyle = "#8ecc51";
-                              console.log('hey');
-                              we.strokeStyle = D.team == O.team?"#228b22":"#ff0000";
+                              //we.strokeStyle = D.team == O.team?"#228b22":"#ff0000";
+                              we.strokeStyle = "#ff0000";
+                              console.log(we.strokeStyle + " " + O.x+","+O.y+" "+D.x+","+D.y);
                               we.beginPath();
                               we.moveTo(O.x, O.y);
                               we.moveTo(D.x, D.y);
