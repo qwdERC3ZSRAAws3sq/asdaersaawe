@@ -6045,7 +6045,7 @@
                             if(D!=O){
                               //we.fillStyle = "#8ecc51";
                               console.log('hey');
-                              we.fillStyle = D.team == O.team?"#228b22":"#ff0000";
+                              we.strokeStyle = D.team == O.team?"#228b22":"#ff0000";
                               we.beginPath();
                               we.moveTo(O.x, O.y);
                               we.moveTo(D.x, D.y);
