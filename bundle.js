@@ -6048,7 +6048,7 @@
                               we.strokeStyle = "#ff0000";
                               console.log(we.strokeStyle + " " + O.x+","+O.y+" "+D.x+","+D.y);
                               we.beginPath();
-                              we.moveTo(O.x-f, O.y-d);
+                              we.moveTo(0, 0);
                               we.moveTo(D.x-f, D.y-d);
                               we.stroke();
                             }
