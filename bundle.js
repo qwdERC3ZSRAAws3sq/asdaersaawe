@@ -3067,9 +3067,9 @@
             if (t) {
                 for (var n = 0; n < this.items.length; ++n)
                     if (d.list[this.items[n]].group == t.group) return this.buildIndex == this.items[n] && (this.buildIndex = e), this.items[n] = e, !0;
-                return this.items.push(e), !0
+                return this.items.push(e), window.pItems = this.items, !0
             }
-            window.pItems = this.items;
+            //window.pItems = this.items;
             return !1
         }, this.setUserData = function(e) {
             e && (this.name = "unknown", l.isString(e.name) && e.name.length <= a.maxNameLength && (e.name = e.name.replace(/<|>/g, "").replace(/[^\x00-\x7F]/g, ""), e.name.replace(/\s/g, "").length > 0 && (this.name = e.name)), this.skinColor = 0, a.skinColors[e.skin] && (this.skinColor = e.skin))
