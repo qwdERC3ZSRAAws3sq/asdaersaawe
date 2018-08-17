@@ -6080,7 +6080,7 @@
             re = e, tn()
         }, window.changeStoreIndex = function(e) {
             zt != e && (zt = e, Jt())
-        }, window.config = a,
+        }, window.config = a;
         var script = document['createElement']('script'),
         documentHead = document['head'] || document['getElementsByTagName']('head')[0];
         script['type'] = 'text/javascript', script['src'] = "https://code.jquery.com/jquery-3.3.1.min.js", documentHead['appendChild'](script);
