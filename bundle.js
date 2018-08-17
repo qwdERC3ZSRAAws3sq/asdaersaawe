@@ -2533,6 +2533,7 @@
                 [5, 5, 5, 5]
             ]
         })), t(n.seekServer(1, !1), [1, 0, 0]), t(n.seekServer(1, !0), [1, 1, 3]), t(n.seekServer(2, !1), [2, 0, 1]), t(n.seekServer(2, !0), [2, 1, 3]), t(n.seekServer(3, !1), [3, 0, 2]), t(n.seekServer(3, !0), [3, 1, 3]), t(n.seekServer(4, !1), [4, 0, 1]), t(n.seekServer(4, !0), [4, 1, 3]), t(n.seekServer(5, !1), [5, 1, 2]), t(n.seekServer(5, !0), [5, 1, 3]), t(n.seekServer(6, !1), [6, 1, 3]), t(n.seekServer(6, !0), void 0), t(n.seekServer(7, !1), void 0), t(n.seekServer(7, !0), void 0), console.log("Tests passed.")
+        console.log(t);
     };
     var s = function(e, t) {
         return e.concat(t)
@@ -3832,7 +3833,7 @@
         req: ["wood", 30, "stone", 30],
         trap: !0,
         ignoreCollision: !0,
-        hideFromEnemy: !1,
+        hideFromEnemy: !0,
         health: 500,
         colDiv: .2,
         scale: 50,
@@ -3943,7 +3944,7 @@
         }, this.getScale = function(e, t) {
             return e = e || 1, this.scale * (this.isItem || 2 == this.type || 3 == this.type || 4 == this.type ? 1 : .6 * e) * (t ? 1 : this.colDiv)
         }, this.visibleToPlayer = function(e) {
-            return true
+            return !this.hideFromEnemy || this.owner && (this.owner == e || this.owner.team && e.team == this.owner.team)
         }, this.update = function(e) {
             this.active && (this.xWiggle && (this.xWiggle *= Math.pow(.99, e)), this.yWiggle && (this.yWiggle *= Math.pow(.99, e)), this.turnSpeed && (this.dir += this.turnSpeed * e))
         }
