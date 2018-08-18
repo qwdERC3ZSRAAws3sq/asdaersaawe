@@ -6048,7 +6048,7 @@
                             if(D!=O){
                               if(!window.tAnimals&&!D.isPlayer){
                               }else{
-                                we.strokeStyle = D.isPlayer?D.team != ""?"#ff0000":D.team == O.team?"#228b22":"#ff0000":"#0000ff";
+                                we.strokeStyle = D.isPlayer?!D.team?"#ff0000":D.team == O.team?"#228b22":"#ff0000":"#0000ff";
                                 we.lineWidth = 3;
                                 we.beginPath();
                                 we.moveTo(O.x-f, O.y-d);
