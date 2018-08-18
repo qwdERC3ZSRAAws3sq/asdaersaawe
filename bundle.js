@@ -6057,7 +6057,7 @@
                                 we.stroke();
                                 we.strokeStyle = nt;
                               }
-                            }else{n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + " ["+ O.x2 +", "+O.y2+"]", He.style.width = O.XP / O.maxXP * 100 + "%")}
+                            }else{console.log(D);n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + " ["+ O.x2 +", "+O.y2+"]", He.style.width = O.XP / O.maxXP * 100 + "%")}
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
                         if ((D = W[s]).visible && D.chatCountdown > 0) {
