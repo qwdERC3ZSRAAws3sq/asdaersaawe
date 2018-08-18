@@ -5641,8 +5641,8 @@
     }
 
     function Ln(e, t, n) {
-        if(!pLocation)pLocation = undefined;
-        void 0 != e && (O.XP = e), void 0 != t && (O.maxXP = t), void 0 != n && (O.age = n), n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")
+        if(!window.pLocation)window.pLocation = undefined;
+        void 0 != e && (O.XP = e), void 0 != t && (O.maxXP = t), void 0 != n && (O.age = n), n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + window.pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")
     }
 
     function Hn(e) {
@@ -6058,7 +6058,7 @@
                                 we.stroke();
                                 we.strokeStyle = nt;
                               }
-                            }else{var pLocation = window.devOptions?" ["+ O.x1.toFixed(2) +", "+O.y1.toFixed(2)+"]":" ["+ O.x2 +", "+O.y2+"]"; O.age == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")}
+                            }else{window.pLocation = window.devOptions?" ["+ O.x1.toFixed(2) +", "+O.y1.toFixed(2)+"]":" ["+ O.x2 +", "+O.y2+"]"; O.age == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + window.pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")}
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
                         if ((D = W[s]).visible && D.chatCountdown > 0) {
