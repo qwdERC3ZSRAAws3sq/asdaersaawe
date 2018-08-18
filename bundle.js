@@ -6057,7 +6057,7 @@
                                 we.stroke();
                                 we.strokeStyle = nt;
                               }
-                            }
+                            }else{console.log(D);}
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
                         if ((D = W[s]).visible && D.chatCountdown > 0) {
