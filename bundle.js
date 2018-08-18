@@ -5641,7 +5641,7 @@
     }
 
     function Ln(e, t, n) {
-        void 0 != e && (O.XP = e), void 0 != t && (O.maxXP = t), void 0 != n && (O.age = n), n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age, He.style.width = O.XP / O.maxXP * 100 + "%")
+        void 0 != e && (O.XP = e), void 0 != t && (O.maxXP = t), void 0 != n && (O.age = n), n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + " ["+ O.x +", " + O.y + "]", He.style.width = O.XP / O.maxXP * 100 + "%")
     }
 
     function Hn(e) {
@@ -6057,7 +6057,7 @@
                                 we.stroke();
                                 we.strokeStyle = nt;
                               }
-                            }else{console.log(D);}
+                            }
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
                         if ((D = W[s]).visible && D.chatCountdown > 0) {
