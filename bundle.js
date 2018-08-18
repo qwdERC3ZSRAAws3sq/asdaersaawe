@@ -6057,7 +6057,7 @@
                                 we.stroke();
                                 we.strokeStyle = nt;
                               }
-                            }else{pLocation = window.devOptions:" ["+ O.x1.toFixed(2) +", "+O.y1.toFixed(2)+"]":" ["+ O.x2 +", "+O.y2+"]"; n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")}
+                            }else{pLocation = window.devOptions?" ["+ O.x1.toFixed(2) +", "+O.y1.toFixed(2)+"]":" ["+ O.x2 +", "+O.y2+"]"; n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")}
                         }
                     for (m.update(A, we, f, d), s = 0; s < W.length; ++s)
                         if ((D = W[s]).visible && D.chatCountdown > 0) {
