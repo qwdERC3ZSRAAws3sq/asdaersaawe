@@ -5641,7 +5641,8 @@
     }
 
     function Ln(e, t, n) {
-        void 0 != e && (O.XP = e), void 0 != t && (O.maxXP = t), void 0 != n && (O.age = n), n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : if(!pLocation)pLocation = undefined,(Le.innerHTML = "AGE " + O.age + pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")
+        if(!pLocation)pLocation = undefined;
+        void 0 != e && (O.XP = e), void 0 != t && (O.maxXP = t), void 0 != n && (O.age = n), n == a.maxAge ? (Le.innerHTML = "How'd you get this far?", He.style.width = "100%") : (Le.innerHTML = "AGE " + O.age + pLocation, He.style.width = O.XP / O.maxXP * 100 + "%")
     }
 
     function Hn(e) {
